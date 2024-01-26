@@ -1,5 +1,6 @@
 import streamlit as st
-from keras.models import load_model
+from tensorflow.keras.models import load_model
+
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
@@ -65,12 +66,19 @@ def webcam_capture():
         pil_image = Image.fromarray(rgb_frame)
         class_name, confidence_score = classify_image(pil_image)
 
-        # Print prediction and confidence score
-        st.write("Class:", class_name)
-        st.write("Confidence Score:", confidence_score)
+        # Create a rounded border with a black background around the class name and confidence percentage
+        st.markdown(
+            f"""
+            <div style="background-color: black; border: 2px solid black; border-radius: 10px; padding: 10px; margin-top: 10px;">
+                <p style="font-size: 18px; color: white;"><b>Class:</b> {class_name}</p>
+                <p style="font-size: 18px; color: white;"><b>Confidence Score:</b> {confidence_score * 100:.2f}%</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
         # Announce the recognized class
-        st.success(f"Recognized class: {class_name} with probability: {confidence_score}")
+        st.success(f"Recognized class: {class_name} with probability: {confidence_score * 100:.2f}%")
 
         # Check if the confidence score is above a certain threshold (adjust as needed)
         threshold = 0.9  # Adjust as needed
@@ -85,6 +93,10 @@ def webcam_capture():
 
 def main():
     st.title("Webcam Image Classification App")
+    st.markdown("""
+        #### Real-time Image Classification using Webcam
+        This app captures images from your webcam and classifies them using a pre-trained model.
+    """)
     webcam_capture()
 
 if __name__ == "__main__":

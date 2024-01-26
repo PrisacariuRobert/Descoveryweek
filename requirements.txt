@@ -1,0 +1,5 @@
+streamlit==1.0.0
+tensorflow==2.x  # Replace 'x' with the actual version you are using
+pillow
+keras
+opencv-python
