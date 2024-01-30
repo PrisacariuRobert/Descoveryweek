@@ -7,10 +7,11 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("C:\DiscoveryWeek\keras_model.h5", compile=False)
+model = load_model("keras_model.h5", compile=False)
 
 # Load the labels
-class_names = open("C:\DiscoveryWeek\labels.txt", "r").readlines()
+class_names = [name.strip() for name in open("labels.txt", "r").readlines()]
+
 
 def classify_image(img):
     # Create the array of the right shape to feed into the keras model
@@ -35,7 +36,7 @@ def classify_image(img):
     class_name = class_names[index]
     confidence_score = prediction[0][index]
 
-    return class_name[2:], confidence_score
+    return class_name, confidence_score
 
 def main():
     st.title("Image Classification App")

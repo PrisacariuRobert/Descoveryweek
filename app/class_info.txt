@@ -1,0 +1,21 @@
+0: Leopards:
+Info
+Leopards are large carnivores that are found in sub-Saharan Africa and parts of Asia. They are powerfully built with long bodies, relatively short legs, and a broad head. ...
+
+1: Lions:
+Info
+Lions are large carnivores that are native to Africa and India. They have a muscular, broad-chested body; a short, rounded head; round ears; and a hairy tuft at the end of their tail. ...
+
+2: Elephants:
+Info
+Elephants are the largest land mammals on earth and have distinctly massive bodies, large ears, and long trunks. ...
+
+3: Rhinos:
+Info
+Rhinos are large herbivores that are native to Africa and Asia. There are five different species of rhino: black, white, greater one-horned, Javan, and Sumatran. ...
+
+4: Buffalos:
+Info
+African buffalos are large herbivores that are found in sub-Saharan Africa. They are also known as Cape buffalos and are the only species of buffalo found in Africa, but four distinct subspecies exist: ...
+
+...

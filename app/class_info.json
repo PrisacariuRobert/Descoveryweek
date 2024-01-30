@@ -1,0 +1,32 @@
+{
+  "Leopard": {
+    "info": "Leopards are large carnivores...",
+    "endangered_reason": "Leopards are listed as 'vulnerable'...",
+    "how_to_save": "To conserve leopards, it is important...",
+    "class_index": 0
+  },
+  "Lion": {
+    "info": "Lions are large carnivores...",
+    "endangered_reason": "Lions are listed as 'vulnerable'...",
+    "how_to_save": "To conserve lions, it is important...",
+    "class_index": 1
+  },
+  "Elephant": {
+    "info": "Elephants are the largest land mammals...",
+    "endangered_reason": "Elephants are listed as 'vulnerable'...",
+    "how_to_save": "To conserve elephants, it is important...",
+    "class_index": 2
+  },
+  "Rhino": {
+    "info": "Rhinos are large herbivores...",
+    "endangered_reason": "Rhinos are listed as 'vulnerable'...",
+    "how_to_save": "To conserve rhinos, it is important...",
+    "class_index": 3
+  },
+  "Buffalo": {
+    "info": "African buffalos are large herbivores...",
+    "endangered_reason": "African buffalos are listed as 'near threatened'...",
+    "how_to_save": "To conserve African buffalos, it is important...",
+    "class_index": 4
+  }
+}

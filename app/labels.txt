@@ -1,0 +1,5 @@
+0 Leopard
+1 Lion
+2 Elephant 
+3 Rino
+4 buffalo
