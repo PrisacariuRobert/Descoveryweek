@@ -3,3 +3,5 @@ tensorflow==2.15.0
 pillow
 keras
 opencv-python
+freeglut3-dev
+libgtk2.0-dev
